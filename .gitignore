@@ -30,3 +30,11 @@ HELP.md
 
 ### Mac ###
 **/.DS_Store
+
+### Entorno local del laboratorio ###
+/.maven-cache/
+/logs/
+/__pycache__/
+/build_lab.py
+/build_mock_tests.py
+/validacion-caso-5.log
