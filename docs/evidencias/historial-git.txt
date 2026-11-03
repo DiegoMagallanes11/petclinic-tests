@@ -1,0 +1,27 @@
+*   6513637 (HEAD -> feature/cierre-laboratorio) Resuelve el conflicto conservando las dos formas de validacion
+|\  
+| * 6f6384d (practica/validacion-mockito) Describe la validacion aislada en la rama de practica
+* | 078f108 Describe la validacion de persistencia en el ejercicio
+|/  
+* c3c8c04 Prepara una practica documentada de conflicto Git
+*   80dd195 (origin/main, main) Integra el grupo 5 de Angel revisado por Diego
+|\  
+| * 79bf739 (revision/angel-grupo-5) Documenta el PR de Ángel y la solicitud de revisión
+| * c26f693 Registra la revisión de Diego y la publicación mediante un fork
+| * 9ce9ef8 Completa las asignaciones de especialidades y sus pruebas del grupo 5
+* | eee03cd Integra el caso 5 de tipos revisado por Angel
+|\| 
+| * 1b205bb (origin/feature/diego-caso-5, feature/diego-caso-5) Documenta el caso de Diego y prepara las instrucciones para Angel
+| * da05b86 Agrega el servicio de tipos y sus pruebas de creacion actualizacion busqueda y eliminacion
+|/  
+| *   b3ae417 (refs/stash) On feature/diego-casos-1-2-3: Trabajo previo de casos 1 a 3 antes de la aclaracion del profesor
+|/|\  
+| | * 65a8d39 untracked files on feature/diego-casos-1-2-3: 04e591c update
+| * c645af9 index on feature/diego-casos-1-2-3: 04e591c update
+|/  
+* 04e591c (upstream/main, upstream/HEAD, feature/diego-casos-1-2-3) update
+* c147b80 update
+* 65604e5 update
+* 5c7b692 status
+* 6bb6652 update
+* 249c784 update

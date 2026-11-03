@@ -1,0 +1,10 @@
+# Ejercicio controlado de conflicto Git
+
+<<<<<<< HEAD
+Validacion: pruebas de persistencia con H2.
+=======
+Validacion: pruebas unitarias aisladas con Mockito.
+>>>>>>> practica/validacion-mockito
+
+Practica realizada bajo la identidad de Diego; no representa cambios hechos por Angel.
+

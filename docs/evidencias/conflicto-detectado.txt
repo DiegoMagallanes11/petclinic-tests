@@ -1,0 +1,5 @@
+Auto-merging docs/EJERCICIO_CONFLICTO.md
+CONFLICT (content): Merge conflict in docs/EJERCICIO_CONFLICTO.md
+Automatic merge failed; fix conflicts and then commit the result.
+UU docs/EJERCICIO_CONFLICTO.md
+?? docs/evidencias/
