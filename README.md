@@ -22,7 +22,7 @@ Requisitos: JDK 21, Git e Internet para la primera descarga de Maven. Configura 
 ```powershell
 git clone https://github.com/DiegoMagallanes11/petclinic-tests.git
 cd petclinic-tests
-git switch feature/diego-caso-5
+git switch main
 ./mvnw.cmd clean test
 ```
 
@@ -49,22 +49,22 @@ Diego: servicio de tipos, cuatro pruebas H2 y ocho pruebas con Mockito, document
 
 Ángel: VetSpecialtyService y soporte JPA para veterinarios, especialidades y asignaciones con clave compuesta. Doce escenarios del grupo 5 cubiertos con Mockito y H2, mas validaciones y restricciones reales de base de datos. Consulta [la explicacion y distribucion de pruebas](docs/EXPLICACION_ANGEL.md) y [los resultados de Ángel](docs/RESULTADOS_ANGEL.md).
 
-Conflictos resueltos: ninguno por ahora. La revision del compaÃ±ero, los merges y el conflicto exigido deben documentarse cuando ocurran realmente. Cada integrante usa su rama y PR. Los commits se escriben en espaÃ±ol sin prefijos fix: ni feat:.
+Se integraron el [PR #1](https://github.com/DiegoMagallanes11/petclinic-tests/pull/1) y el [PR #2](https://github.com/DiegoMagallanes11/petclinic-tests/pull/2), con revisiones cruzadas y commits propios. Angel ya es colaborador. La suite conjunta contiene 58 pruebas y GitHub Actions valido main correctamente.
+
+Se realizo una [practica controlada de conflicto](docs/EJERCICIO_CONFLICTO.md), con conflicto real y merge de resolucion 6513637. Los dos cambios de practica fueron realizados por Diego; no se atribuyen a Angel. Los PR de implementacion se integraron sin conflicto. La aceptacion de esta practica como requisito de equipo corresponde al docente.
+
+Consulta el [informe](docs/INFORME_LABORATORIO.md) y las [evidencias originales](docs/evidencias/).
 
 Para la entrega: enlace al repositorio, captura real de `git log --all --graph --oneline`, README con aportes y conflictos, e informe con evidencias y conclusiones.
 
 ## Parte de Ángel
 
-La rama feature/angel-grupo-5 parte de feature/diego-caso-5 porque el PR #1 seguia abierto al iniciar el trabajo. El PR de Ángel debe compararse con esa rama mientras exista la dependencia; una vez integrado el PR de Diego, se puede cambiar la base a main.
-
-La rama de Ángel se publica en el fork AngelRosales78/petclinic-tests porque su cuenta aun no tiene permiso para subir al repositorio compartido. La [revision de Ángel del PR #1](https://github.com/DiegoMagallanes11/petclinic-tests/pull/1#pullrequestreview-5757941702) quedo registrada como APPROVED.
-
-El [PR #2 de Ángel](https://github.com/DiegoMagallanes11/petclinic-tests/pull/2) esta abierto. Se solicito la revision de Diego mediante comentario, ya que GitHub no permitio asignarlo formalmente desde la cuenta de Ángel.
+Angel desarrollo su grupo 5 desde la rama de Diego y lo publico inicialmente en su fork. Tras integrar el PR #1 se cambio la base del PR #2 a main y se integro con aprobacion de Diego. Ambos aportes estan disponibles en main.
 
 No se modifican el servicio, entidad, repositorio ni pruebas de tipos de Diego. Se conservan schema.sql y data.sql. La regla de una sola especialidad principal se aplica en una transaccion con bloqueo del veterinario; el esquema original no tiene una restriccion adicional para esa regla.
 
 ```powershell
-git switch feature/angel-grupo-5
+git switch main
 ./mvnw.cmd test "-Dtest=VetSpecialtyServiceMockitoTest,VetSpecialtyServiceTest"
 ./mvnw.cmd clean test
 ```
